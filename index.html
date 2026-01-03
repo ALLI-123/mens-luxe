@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Men’s Luxe — Watches, Clothes & Accessories</title>
+  <meta name="description" content="Men’s Luxe: premium watches, tailored clothes, and accessories. Order via WhatsApp or submit a request.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">ML</span> Men’s Luxe</div>
+    <nav class="nav-links">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button id="mode-toggle" class="btn mode-btn" aria-label="Toggle theme">🌙</button>
+      <button id="open-cart" class="btn btn-primary" aria-label="Open order cart">Order Cart</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Elevate Your Style</h1>
+      <p>Premium watches, tailored clothes, and accessories for the modern man.</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+        <a href="#contact" class="btn">Request a fit</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="section-head">
+        <h2>Featured Products</h2>
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="watches">Watches</button>
+          <button class="chip" data-filter="clothes">Clothes</button>
+          <button class="chip" data-filter="accessories">Accessories</button>
+        </div>
+      </div>
+
+      <div class="grid-3 products">
+        <!-- Product: Luxury Watch -->
+        <article class="card product" data-cat="watches">
+          <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?q=80&w=800&auto=format&fit=crop" alt="Luxury Watch">
+          <div class="card-body">
+            <h3>Luxury Watch</h3>
+            <p class="desc">Timeless design with modern precision.</p>
+            <p class="price" data-price="120000">₦120,000</p>
+            <div class="actions">
+              <button class="btn add" data-name="Luxury Watch" data-price="120000">Add to order</button>
+              <a class="btn btn-primary wa" href="https://wa.me/2348012345678?text=I%20want%20the%20Luxury%20Watch%20(₦120,000)" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product: Tailored Suit -->
+        <article class="card product" data-cat="clothes">
+          <img src="img/tailored suit.avif" alt="Tailored Suit">
+          <div class="card-body">
+            <h3>Tailored Suit</h3>
+            <p class="desc">Perfect fit for every occasion.</p>
+            <p class="price" data-price="250000">₦250,000</p>
+            <div class="actions">
+              <button class="btn add" data-name="Tailored Suit" data-price="250000">Add to order</button>
+              <a class="btn btn-primary wa" href="https://wa.me/2348012345678?text=I%20want%20the%20Tailored%20Suit%20(₦250,000)" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product: Leather Belt -->
+        <article class="card product" data-cat="accessories">
+          <img src="img/leather-belt.avif" alt="Leather Belt">
+          <div class="card-body">
+            <h3>Leather Belt</h3>
+            <p class="desc">Crafted with premium leather.</p>
+            <p class="price" data-price="35000">₦35,000</p>
+            <div class="actions">
+              <button class="btn add" data-name="Leather Belt" data-price="35000">Add to order</button>
+              <a class="btn btn-primary wa" href="https://wa.me/2348012345678?text=I%20want%20the%20Leather%20Belt%20(₦35,000)" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product: Slim Fit Shirt -->
+        <article class="card product" data-cat="clothes">
+          <img src="img/slim-fit-shirt.webp" alt="Slim Fit Shirt">
+          <div class="card-body">
+            <h3>Slim Fit Shirt</h3>
+            <p class="desc">Crisp cotton, tailored silhouette.</p>
+            <p class="price" data-price="28000">₦28,000</p>
+            <div class="actions">
+              <button class="btn add" data-name="Slim Fit Shirt" data-price="28000">Add to order</button>
+              <a class="btn btn-primary wa" href="https://wa.me/2348012345678?text=I%20want%20the%20Slim%20Fit%20Shirt%20(₦28,000)" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product: Minimal Bracelet -->
+        <article class="card product" data-cat="accessories">
+          <img src="img/minimal-bracelet.webp" alt="Minimal Bracelet">
+          <div class="card-body">
+            <h3>Minimal Bracelet</h3>
+            <p class="desc">Subtle metal, daily wear.</p>
+            <p class="price" data-price="15000">₦15,000</p>
+            <div class="actions">
+              <button class="btn add" data-name="Minimal Bracelet" data-price="15000">Add to order</button>
+              <a class="btn btn-primary wa" href="https://wa.me/2348012345678?text=I%20want%20the%20Minimal%20Bracelet%20(₦15,000)" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>Men’s Luxe curates premium fashion essentials for men who value elegance, quality, and timeless style.</p>
+      <div class="usp-grid">
+        <div class="usp">
+          <h4>Authentic quality</h4>
+          <p>Carefully sourced pieces that last.</p>
+        </div>
+        <div class="usp">
+          <h4>Fast delivery</h4>
+          <p>Same‑day in Lagos, next‑day nationwide.</p>
+        </div>
+        <div class="usp">
+          <h4>Easy support</h4>
+          <p>WhatsApp, email, or phone — we’re responsive.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <h2>What Our Customers Say</h2>
+      <div class="quotes">
+        <blockquote>“The watch I bought from Men’s Luxe is stunning. I get compliments every day!” — David</blockquote>
+        <blockquote>“Their suits fit like a dream. Worth every naira.” — Kunle</blockquote>
+      </div>
+    </section>
+
+    <!-- Contact: Netlify form + WhatsApp -->
+    <section id="contact" class="section">
+      <h2>Request / Order Form</h2>
+      <form id="order-form" name="mnluxe-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="mnluxe-contact" />
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+
+        <div class="row">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="row">
+          <input type="text" id="product" name="product" placeholder="Product Name (e.g., Luxury Watch)" required />
+          <input type="number" id="quantity" name="quantity" placeholder="Quantity" min="1" value="1" required />
+        </div>
+        <textarea id="message" name="message" placeholder="Notes (size, color, delivery address)" rows="4"></textarea>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send Request</button>
+          <a id="wa-direct" class="btn" href="https://wa.me/2348012345678?text=Hello%2C%20I%27d%20like%20to%20order%20from%20Men%27s%20Luxe" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+        <p class="form-note">We’ll reply promptly. Submitting the form also sends your request to our team.</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/2348163035778?text=Hello%20Men%E2%80%99s%20Luxe%2C%20I%20want%20to%20make%20an%20order" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    💬 Chat on WhatsApp
+  </a>
+
+  <!-- Cart drawer -->
+  <aside class="cart-drawer" aria-live="polite">
+    <div class="cart-head">
+      <h3>Your order</h3>
+      <button id="close-cart" class="close" aria-label="Close cart">×</button>
+    </div>
+    <ul class="cart-items"></ul>
+    <div class="cart-summary">
+      <p><strong>Total:</strong> ₦<span id="cart-total">0</span></p>
+      <div class="cart-actions">
+        <button id="clear-cart" class="btn">Clear</button>
+        <button id="checkout-wa" class="btn btn-primary">Checkout via WhatsApp</button>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p>Men’s Luxe © 2025 • Style Redefined</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/mensluxe" target="_blank" rel="noopener" aria-label="Instagram">
+          <span>📷</span>
+        </a>
+        <a href="https://twitter.com/mensluxe" target="_blank" rel="noopener" aria-label="Twitter / X">
+          <span>𝕏</span>
+        </a>
+        <a href="https://facebook.com/mensluxe" target="_blank" rel="noopener" aria-label="Facebook">
+          <span>📘</span>
+        </a>
+        <!-- Replace URLs with your actual social profiles -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
